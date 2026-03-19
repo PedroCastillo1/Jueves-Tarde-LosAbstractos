@@ -10,6 +10,10 @@ Cuenta con formación complementaria en desarrollo web y bases de datos, habiend
 Además, posee un año de estudios en Relaciones Públicas, lo que aporta a su perfil habilidades comunicacionales.
 En la actualidad, se encuentra profundizando sus conocimientos en Programación II y Paradigma Orientado a Objetos.
 
+Estudiante: Carina Victoria Milano
+Nació el 27 de Julio de 1979. Estudiante de Ingeniería en Informática en UADE y parte de una empresa de calefacción con amplia trayectoria.
+Actualmente formándose en programación y sistemas, con gran interes en aprender y aplicar la tecnología en proyectos reales a futuro.
+
 Foto https://github.com/PedroCastillo1/Jueves-Tarde-LosAbstractos/blob/main/ImagenesReadMe/IMG_3253.JPG
 
 
