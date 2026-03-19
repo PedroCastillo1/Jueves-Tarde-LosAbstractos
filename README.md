@@ -10,9 +10,7 @@ Cuenta con formación complementaria en desarrollo web y bases de datos, habiend
 Además, posee un año de estudios en Relaciones Públicas, lo que aporta a su perfil habilidades comunicacionales.
 En la actualidad, se encuentra profundizando sus conocimientos en Programación II y Paradigma Orientado a Objetos.
 
-Estudiante: Carina Victoria Milano
-Nació el 27 de Julio de 1979. Estudiante de Ingeniería en Informática en UADE y parte de una empresa de calefacción con amplia trayectoria.
-Actualmente formándose en programación y sistemas, con gran interes en aprender y aplicar la tecnología en proyectos reales a futuro.
+Estudiante: Carina Milano. Cuenta con experiencia en la gestión de una empresa familiar dedicada a servicios de calefacción, donde ha desarrollado sólidas habilidades organizativas, de resolución de problemas y trato con clientes. Actualmente cursa el segundo año de la carrera de Ingeniería en Informática en UADE, avanzando en su formación en áreas como programación, bases de datos y sistemas. Su perfil integra experiencia práctica en el ámbito laboral con una orientación creciente hacia el desarrollo tecnológico y la implementación de soluciones informáticas aplicadas.
 
 Estudiante: Esteban Moreno Campo, Nació el 12 de junio de 2007. Estudiante de Ingenieria Informatica en Uade. Actualmente desarrollando capacidades en el ambito de la programacion, a fin de poder emplearlos en ambitos profesionales a futuro.
 
