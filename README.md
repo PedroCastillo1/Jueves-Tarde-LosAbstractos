@@ -10,4 +10,7 @@ Cuenta con formación complementaria en desarrollo web y bases de datos, habiend
 Además, posee un año de estudios en Relaciones Públicas, lo que aporta a su perfil habilidades comunicacionales.
 En la actualidad, se encuentra profundizando sus conocimientos en Programación II y Paradigma Orientado a Objetos.
 
+Foto https://github.com/PedroCastillo1/Jueves-Tarde-LosAbstractos/blob/main/ImagenesReadMe/IMG_3253.JPG
+
+
 
