@@ -19,9 +19,7 @@ public class BalanceoParentesis {
                     return false;
                 }
 
-                if (pila.Tope() == '(') {
-                    pila.Desapilar();
-                }
+                pila.Desapilar();
             }
         }
 
