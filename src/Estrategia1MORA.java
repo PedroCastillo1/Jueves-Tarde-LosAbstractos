@@ -1,4 +1,4 @@
-public class Estrategia1MORA implements PilaTDA{
+public class Estrategia1MORA implements PilaTDA<String>{
     private String[] pila;
     private static final int MAX = 100;
     private int cantidad;
@@ -21,7 +21,7 @@ public class Estrategia1MORA implements PilaTDA{
 
     @Override
     public void Desapilar(){
-        if (!pilaVacia()){
+        if (!PilaVacia()){
             cantidad --;
         }
     }
@@ -31,14 +31,21 @@ public class Estrategia1MORA implements PilaTDA{
 
     
     public String recuperar(){
-        return pila[cantidad -1];
-
+        if (!PilaVacia()){
+            return pila[cantidad - 1];
+        }
+        return null;
     }
 
     
     @Override
     public boolean PilaVacia(){
         return cantidad == 0;
+    }
+
+    @Override
+    public String Tope(){
+        return pila[cantidad - 1];
     }
 
 
