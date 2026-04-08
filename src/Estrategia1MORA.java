@@ -6,13 +6,13 @@ public class Estrategia1MORA implements PilaTDA{
     // por ende para guardar la cantidad de cambios y llevar un contador, necesitamos una variable externa a la pila
 
     @Override
-    public void inicializarPila(){
+    public void InicializarPila(){
         pila = new String[MAX];
         cantidad = 0;
     }
 
     @Override
-    public void apilar (String x){
+    public void Apilar (String x){
         if (cantidad < MAX){
         pila[cantidad] = x;
         cantidad ++;
@@ -20,7 +20,7 @@ public class Estrategia1MORA implements PilaTDA{
     }
 
     @Override
-    public void desapilar(){
+    public void Desapilar(){
         if (!pilaVacia()){
             cantidad --;
         }
@@ -37,7 +37,7 @@ public class Estrategia1MORA implements PilaTDA{
 
     
     @Override
-    public boolean pilaVacia(){
+    public boolean PilaVacia(){
         return cantidad == 0;
     }
 
