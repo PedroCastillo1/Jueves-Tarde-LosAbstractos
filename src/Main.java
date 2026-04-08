@@ -71,4 +71,24 @@ public class Main {
         System.out.println(navegadorDeDirectorios.SubirDeNivel());
         System.out.println(navegadorDeDirectorios.SubirDeNivel());
     }
+
+    //EJERCICIO REVERSION DE PARENTESIS
+         PilaTDA<Character> pila = new ReversionDeParentesis<>();
+        pila.InicializarPila();
+
+        String palabra = "ALGORITMOS";
+
+        for (int i = 0; i < palabra.length(); i++) {
+            pila.Apilar(palabra.charAt(i)); //el chartATse usa para devolver un caracter en la posicion especifica en este caso I, entonces apila una x una
+        }
+
+        String invertida = "";
+
+        while (!pila.PilaVacia()) {
+            invertida += pila.Tope(); //guarda cada letra en inverida
+            pila.Desapilar();
+        }
+
+        System.out.println("Palabra invertida: " + invertida);
+    }
 }
