@@ -1,13 +1,25 @@
 
 public class Main {
     public static void main(String[] args) {
-        String expresion = "( ( a + b ) * c )";
+        System.out.println("********Ejercicio Balanceo de Paréntesis*************");
 
-        boolean resultado = BalanceoParentesis.estaBalanceado(expresion);
+        BalanceoParentesis balanceo = new BalanceoParentesis();
 
-        System.out.println("¿Está balanceado? " + resultado);
+        String expresion1 = "( ( a + b ) * c )";
+        String expresion2 = "( ( a + b ) * c ";
+
+        System.out.println("Expresión 1: " + expresion1);
+        System.out.println("¿Está balanceado? " + balanceo.estaBalanceado(expresion1));
+
+        System.out.println("--------------------------------------");
+
+        System.out.println("Expresión 2: " + expresion2);
+        System.out.println("¿Está balanceado? " + balanceo.estaBalanceado(expresion2));
+
+        System.out.println("--------------------------------------");
 
         //consigna : undo-deshacer. estas codeando y queres volver al estado anterior
+
         System.out.println("*********** Ejercicio Editor de Codigo**********");
         Cambio c = new Cambio("escribiendo");
         String estado = c.getEstado();
@@ -40,34 +52,34 @@ public class Main {
 
         System.out.println("cambio recuperado: " + recupero);
 
-        /* Main del ejercicio de Historial de Navegacion
-         */
+        // Main del ejercicio de Historial de Navegacion
+
         System.out.println("********Ejercicio Historial de Navegacion*************");
         HistorialNavegacion historialNavegacion = new HistorialNavegacion();
         historialNavegacion.InicializarPila();
 
-        historialNavegacion.Apilar("www.fi.uba.ar"); /* Cargo las paginas de busqueda*/
+        historialNavegacion.Apilar("www.fi.uba.ar"); // Cargo las paginas de busqueda
         historialNavegacion.Apilar("www.campus.utn.edu.ar");
         historialNavegacion.Apilar("www.stackoverflow.com");
 
         System.out.println("URL actual: " + historialNavegacion.Tope());
         System.out.println(historialNavegacion.Undo());
         System.out.println(historialNavegacion.Undo());
-        System.out.println(historialNavegacion.Undo()); /* Las retiro una a una */
+        System.out.println(historialNavegacion.Undo()); //Las retiro una a una
 
-        /* Main del ejercicio de Navegacion de Directorios
-         */
+        // Main del ejercicio de Navegacion de Directorios
+
         System.out.println("********Ejercicio Navegacion de Directorios*************");
 
         NavegadorDeDirectorios navegadorDeDirectorios = new NavegadorDeDirectorios();
         navegadorDeDirectorios.InicializarPila();
 
-        navegadorDeDirectorios.Apilar("C:"); /* Añado directorios */
+        navegadorDeDirectorios.Apilar("C:"); // Añado directorios
         navegadorDeDirectorios.Apilar("Usuarios");
         navegadorDeDirectorios.Apilar("Documentos");
 
         System.out.println("Directorio actual: " + navegadorDeDirectorios.Tope());
-        System.out.println(navegadorDeDirectorios.SubirDeNivel()); /* subo de nivel uno a uno */
+        System.out.println(navegadorDeDirectorios.SubirDeNivel()); // subo de nivel uno a uno
         System.out.println(navegadorDeDirectorios.SubirDeNivel());
         System.out.println(navegadorDeDirectorios.SubirDeNivel());
     }
@@ -90,5 +102,8 @@ public class Main {
         }
 
         System.out.println("Palabra invertida: " + invertida);
+
+
     }
+
 }

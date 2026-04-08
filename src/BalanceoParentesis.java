@@ -1,28 +1,60 @@
-public class BalanceoParentesis {
+public class BalanceoParentesis implements PilaTDA<Character> {
 
-    public static boolean estaBalanceado(String expresion) {
+    private static final int MAX = 100;
+    private int cantidad = 0;
+    private char[] pila;
 
-        PilaTDA<Character> pila = new PilaEstatica<>();
-        pila.InicializarPila();
+    @Override
+    public void InicializarPila() {
+        pila = new char[MAX];
+        cantidad = 0;
+    }
+
+    @Override
+    public void Apilar(Character c) {
+        if (cantidad < MAX) {
+            pila[cantidad] = c;
+            cantidad++;
+        }
+    }
+
+    @Override
+    public void Desapilar() {
+        if (cantidad > 0) {
+            cantidad--;
+        }
+    }
+
+    @Override
+    public Character Tope() {
+        return pila[cantidad - 1];
+    }
+
+    @Override
+    public boolean PilaVacia() {
+        return cantidad == 0;
+    }
+
+    public boolean estaBalanceado(String expresion) {
+
+        InicializarPila();
 
         for (int i = 0; i < expresion.length(); i++) {
 
-            char caracterActual = expresion.charAt(i);
+            char c = expresion.charAt(i);
 
-            if (caracterActual == '(') {
-                pila.Apilar(caracterActual);
+            if (c == '(') {
+                Apilar(c);
             }
 
-            if (caracterActual == ')') {
-
-                if (pila.PilaVacia()) {
+            if (c == ')') {
+                if (PilaVacia()) {
                     return false;
                 }
-
-                pila.Desapilar();
+                Desapilar();
             }
         }
 
-        return pila.PilaVacia();
+        return PilaVacia();
     }
 }
