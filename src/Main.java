@@ -11,7 +11,7 @@ public class Main {
         System.out.println("*********** Ejercicio Editor de Codigo**********")
         Cambio c = new Cambio("escribiendo");
         String estado = c.getEstado();
-        Estrategia1 p = new Estrategia();
+        Estrategia1MORA p = new Estrategia1MORA();
         p.InicializarPila();
         p.Apilar(estado);
 
