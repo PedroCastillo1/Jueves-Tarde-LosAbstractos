@@ -10,6 +10,8 @@ public interface PilaTDA<T> {
 
     boolean PilaVacia();
 
+    boolean PilaVacia1();
+
     Void inicializarPila1();
 
     void apilar1(String x);
