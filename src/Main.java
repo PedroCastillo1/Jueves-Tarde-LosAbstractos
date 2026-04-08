@@ -39,11 +39,36 @@ public class Main {
         String recupero = p.recuperar();
 
         System.out.println("cambio recuperado: " + recupero);
-        
-    }
-}
 
-        
+        /* Main del ejercicio de Historial de Navegacion
+         */
+        System.out.println("********Ejercicio Historial de Navegacion*************");
+        HistorialNavegacion historialNavegacion = new HistorialNavegacion();
+        historialNavegacion.InicializarPila();
 
+        historialNavegacion.Apilar("www.fi.uba.ar"); /* Cargo las paginas de busqueda*/
+        historialNavegacion.Apilar("www.campus.utn.edu.ar");
+        historialNavegacion.Apilar("www.stackoverflow.com");
+
+        System.out.println("URL actual: " + historialNavegacion.Tope());
+        System.out.println(historialNavegacion.Undo());
+        System.out.println(historialNavegacion.Undo());
+        System.out.println(historialNavegacion.Undo()); /* Las retiro una a una */
+
+        /* Main del ejercicio de Navegacion de Directorios
+         */
+        System.out.println("********Ejercicio Navegacion de Directorios*************");
+
+        NavegadorDeDirectorios navegadorDeDirectorios = new NavegadorDeDirectorios();
+        navegadorDeDirectorios.InicializarPila();
+
+        navegadorDeDirectorios.Apilar("C:"); /* Añado directorios */
+        navegadorDeDirectorios.Apilar("Usuarios");
+        navegadorDeDirectorios.Apilar("Documentos");
+
+        System.out.println("Directorio actual: " + navegadorDeDirectorios.Tope());
+        System.out.println(navegadorDeDirectorios.SubirDeNivel()); /* subo de nivel uno a uno */
+        System.out.println(navegadorDeDirectorios.SubirDeNivel());
+        System.out.println(navegadorDeDirectorios.SubirDeNivel());
     }
 }
