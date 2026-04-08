@@ -9,4 +9,12 @@ public interface PilaTDA<T> {
     T Tope();
 
     boolean PilaVacia();
+
+    Void inicializarPila1();
+
+    void apilar1(String x);
+
+    void desapilar1();
+
+    String recuperar();
 }
