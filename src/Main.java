@@ -8,7 +8,7 @@ public class Main {
         System.out.println("¿Está balanceado? " + resultado);
 
         //consigna : undo-deshacer. estas codeando y queres volver al estado anterior
-        System.out.println("*********** Ejercicio Editor de Codigo**********")
+        System.out.println("*********** Ejercicio Editor de Codigo**********");
         Cambio c = new Cambio("escribiendo");
         String estado = c.getEstado();
         Estrategia1MORA p = new Estrategia1MORA();
