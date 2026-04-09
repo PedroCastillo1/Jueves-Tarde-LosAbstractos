@@ -1,9 +1,9 @@
 package interfaces;
 
-public interface ColaTDA {
+public interface ColaTDA<T> {
     void InicializarCola();
     void Acolar(int x);
     void Desacolar();
-    int Primero();
+    T Primero();
     boolean ColaVacia();
 }
