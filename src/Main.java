@@ -18,6 +18,37 @@ public class Main {
 
         System.out.println("--------------------------------------");
 
+        System.out.println("********Ejercicio Call Stack*************");
+
+        CallStack pila = new CallStack();
+        pila.InicializarPila();
+
+        String funcion1 = "main()";
+        System.out.println("Apilo: " + funcion1);
+        pila.Apilar(funcion1);
+
+        String funcion2 = "calcularPromedio()";
+        System.out.println("Apilo: " + funcion2);
+        pila.Apilar(funcion2);
+
+        String funcion3 = "sumar()";
+        System.out.println("Apilo: " + funcion3);
+        pila.Apilar(funcion3);
+
+        System.out.println("--------------------------------------");
+        System.out.println("Tope actual:" + pila.Tope());
+        System.out.println("--------------------------------------");
+
+        System.out.println("Desapilo: " + pila.Tope());
+        pila.Desapilar();
+
+        System.out.println("Desapilo: " + pila.Tope());
+        pila.Desapilar();
+
+        System.out.println("Desapilo: " + pila.Tope());
+        pila.Desapilar();
+
+
         //consigna : undo-deshacer. estas codeando y queres volver al estado anterior
 
         System.out.println("*********** Ejercicio Editor de Codigo**********");
