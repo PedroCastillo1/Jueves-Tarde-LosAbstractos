@@ -1,3 +1,5 @@
+package Bloque3.Implementacion;
+
 import Bloque3.Interface.ColaPrioridadTDA;
 
 public class ColaPrioridad implements ColaPrioridadTDA<Integer> {
