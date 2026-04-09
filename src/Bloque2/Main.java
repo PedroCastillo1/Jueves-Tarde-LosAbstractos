@@ -1,7 +1,5 @@
 package Bloque2;
 
-import Bloque2.*;
-
 public class Main {
     public static void main(String[] args) {
         System.out.println("-----------------------------------------------------------------------------");
@@ -133,5 +131,6 @@ public class Main {
         String resultado = reversor.revertirstring(palabra);
 
         System.out.println("Invertida: " + resultado);
+
     }
 }
