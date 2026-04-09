@@ -1,3 +1,5 @@
+package Bloque2;
+
 public interface PilaTDA<T> {
 
     void InicializarPila();

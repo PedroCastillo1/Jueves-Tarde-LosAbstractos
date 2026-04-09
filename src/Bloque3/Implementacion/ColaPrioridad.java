@@ -1,4 +1,6 @@
-public class ColaPrioridad implements ColaPrioridadTDA {
+import Bloque3.Interface.ColaPrioridadTDA;
+
+public class ColaPrioridad implements ColaPrioridadTDA<Integer> {
 
         private static final int MAX = 100;
         private int[] datos;
@@ -13,7 +15,7 @@ public class ColaPrioridad implements ColaPrioridadTDA {
         }
 
         @Override
-        public void AcolarPrioridad(int numero, int prioridad) {
+        public void AcolarPrioridad(Integer numero, int prioridad) {
             if (cantidad < MAX) {
                 int i = cantidad - 1;
 
@@ -42,6 +44,7 @@ public class ColaPrioridad implements ColaPrioridadTDA {
 
         }
 
+        @Override
         public void Desacolar() {
             if (!ColaVacia()) {
                 for (int i = 0; i < cantidad - 1; i++) { // i tiene que ser menor si o si a la cantidad", osea que no se tiene que pasar de la ultima pos ocupada
@@ -62,7 +65,7 @@ public class ColaPrioridad implements ColaPrioridadTDA {
         }
 
         @Override
-        public int Primero() {
+        public Integer Primero() {
             if (cantidad != 0) {
                 return datos[0];
             }

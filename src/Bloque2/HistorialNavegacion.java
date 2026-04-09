@@ -1,27 +1,23 @@
-public class NavegadorDeDirectorios implements PilaTDA<String> {
+package Bloque2;
+
+public class HistorialNavegacion implements PilaTDA<String> {
     private static final int Max = 100;
     private int cantidad = 0;
-    private String [] directorios;
+    private String [] urls;
 
-    public NavegadorDeDirectorios() {
+    public HistorialNavegacion() {
         InicializarPila();
     }
 
     @Override
     public void InicializarPila() {
-        directorios = new String[Max];
+        urls = new String[Max];
     }
 
     @Override
     public void Apilar(String valorAApilar) {
-
         if (cantidad < Max) {
-            if (!PilaVacia()) {
-                directorios[cantidad] = Tope() + "/" + valorAApilar;
-            }
-            else {
-                directorios[cantidad] = valorAApilar;
-            }
+            urls[cantidad] = valorAApilar;
             cantidad++;
         }
     }
@@ -35,7 +31,7 @@ public class NavegadorDeDirectorios implements PilaTDA<String> {
 
     @Override
     public String Tope() {
-        return directorios[cantidad - 1];
+        return urls[cantidad - 1];
     }
 
     @Override
@@ -43,12 +39,12 @@ public class NavegadorDeDirectorios implements PilaTDA<String> {
         return cantidad == 0;
     }
 
-    public String SubirDeNivel(){
-        if (cantidad > 1){
+    public String Undo(){
+        if (cantidad > 1) {
             Desapilar();
-            return "Directorio post subida de nivel es: " + Tope();
+            return "Se volvio a la pagina " + Tope();
         }else {
-            return "Nivel mas alto";
+            return "No hay urls anteriores";
         }
     }
 }

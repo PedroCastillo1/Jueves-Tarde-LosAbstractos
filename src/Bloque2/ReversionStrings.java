@@ -1,3 +1,5 @@
+package Bloque2;
+
 public class ReversionStrings implements PilaTDA<Character> {
 
     private static final int MAX = 100;

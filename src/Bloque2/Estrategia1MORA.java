@@ -1,4 +1,6 @@
-public class Estrategia1MORA implements PilaTDA<String>{
+package Bloque2;
+
+public class Estrategia1MORA implements PilaTDA<String> {
     private String[] pila;
     private static final int MAX = 100;
     private int cantidad;

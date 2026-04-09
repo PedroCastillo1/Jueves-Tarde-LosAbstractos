@@ -1,5 +1,3 @@
-package interfaces;
-
 public interface ColaTDA<T> {
     void InicializarCola();
     void Acolar(int x);

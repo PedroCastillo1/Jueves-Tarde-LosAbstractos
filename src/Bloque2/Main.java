@@ -1,3 +1,4 @@
+package Bloque2;
 
 public class Main {
     public static void main(String[] args) {
@@ -85,7 +86,7 @@ public class Main {
 
         System.out.println("cambio recuperado: " + recupero);
 
-        // Main del ejercicio de Historial de Navegacion
+        // Bloque2.Main del ejercicio de Historial de Navegacion
         System.out.println("-----------------------------------------------------------------------------");
 
         System.out.println("********Ejercicio Historial de Navegacion*************");
@@ -100,7 +101,7 @@ public class Main {
         System.out.println(historialNavegacion.Undo());
         System.out.println(historialNavegacion.Undo()); //Las retiro una a una
 
-        // Main del ejercicio de Navegacion de Directorios
+        // Bloque2.Main del ejercicio de Navegacion de Directorios
         System.out.println("-----------------------------------------------------------------------------");
 
         System.out.println("********Ejercicio Navegacion de Directorios*************");

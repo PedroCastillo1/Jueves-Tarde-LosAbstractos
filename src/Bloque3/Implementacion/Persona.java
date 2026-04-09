@@ -1,5 +1,3 @@
-package Implementacion;
-
 public class Persona {
 
     private int prioridad;

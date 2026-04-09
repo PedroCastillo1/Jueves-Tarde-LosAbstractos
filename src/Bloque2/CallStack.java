@@ -1,5 +1,5 @@
-/*Pila de Llamadas (Call Stack): Cuando una función llama a otra.
-o Consigna: Si Main() llama a CalcularPromedio() y esta llama a
+package Bloque2;/*Pila de Llamadas (Call Stack): Cuando una función llama a otra.
+o Consigna: Si Bloque2.Main() llama a CalcularPromedio() y esta llama a
 Sumar(), ¿quién está en el Tope() en el momento de la ejecución de
 la suma?
 main llama a calcularproemdio, y esta llama a sumar

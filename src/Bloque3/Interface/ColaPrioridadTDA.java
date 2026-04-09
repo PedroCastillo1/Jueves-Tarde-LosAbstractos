@@ -1,10 +1,16 @@
-package Interfaces;
+package Bloque3.Interface;
 
 public interface ColaPrioridadTDA<T> {
+
     void InicializarColaPrioridad();
-    void AcolarPrioridad(T valor, int prioridad);
+
+    void AcolarPrioridad(T numero, int prioridad);
+
     void Desacolar();
+
     boolean ColaVacia();
+
     T Primero();
-    T Prioridad();
+
+    int Prioridad();
 }

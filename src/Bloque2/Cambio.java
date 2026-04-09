@@ -1,3 +1,5 @@
+package Bloque2;
+
 public class Cambio {
     private  String estado;
 
