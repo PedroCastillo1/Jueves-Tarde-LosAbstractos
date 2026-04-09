@@ -1,6 +1,7 @@
 
 public class Main {
     public static void main(String[] args) {
+        System.out.println("-----------------------------------------------------------------------------");
         System.out.println("********Ejercicio Balanceo de Paréntesis*************");
 
         BalanceoParentesis balanceo = new BalanceoParentesis();
@@ -11,12 +12,12 @@ public class Main {
         System.out.println("Expresión 1: " + expresion1);
         System.out.println("¿Está balanceado? " + balanceo.estaBalanceado(expresion1));
 
-        System.out.println("--------------------------------------");
+
 
         System.out.println("Expresión 2: " + expresion2);
         System.out.println("¿Está balanceado? " + balanceo.estaBalanceado(expresion2));
 
-        System.out.println("--------------------------------------");
+        System.out.println("-----------------------------------------------------------------------------");
 
         System.out.println("********Ejercicio Call Stack*************");
 
@@ -35,9 +36,9 @@ public class Main {
         System.out.println("Apilo: " + funcion3);
         pila.Apilar(funcion3);
 
-        System.out.println("--------------------------------------");
+
         System.out.println("Tope actual:" + pila.Tope());
-        System.out.println("--------------------------------------");
+
 
         System.out.println("Desapilo: " + pila.Tope());
         pila.Desapilar();
@@ -50,6 +51,7 @@ public class Main {
 
 
         //consigna : undo-deshacer. estas codeando y queres volver al estado anterior
+        System.out.println("-----------------------------------------------------------------------------");
 
         System.out.println("*********** Ejercicio Editor de Codigo**********");
         Cambio c = new Cambio("escribiendo");
@@ -84,6 +86,7 @@ public class Main {
         System.out.println("cambio recuperado: " + recupero);
 
         // Main del ejercicio de Historial de Navegacion
+        System.out.println("-----------------------------------------------------------------------------");
 
         System.out.println("********Ejercicio Historial de Navegacion*************");
         HistorialNavegacion historialNavegacion = new HistorialNavegacion();
@@ -99,6 +102,7 @@ public class Main {
         System.out.println(historialNavegacion.Undo()); //Las retiro una a una
 
         // Main del ejercicio de Navegacion de Directorios
+        System.out.println("-----------------------------------------------------------------------------");
 
         System.out.println("********Ejercicio Navegacion de Directorios*************");
 
@@ -114,28 +118,19 @@ public class Main {
         System.out.println(navegadorDeDirectorios.SubirDeNivel());
         System.out.println(navegadorDeDirectorios.SubirDeNivel());
 
+        System.out.println("-----------------------------------------------------------------------------");
 
-    //EJERCICIO REVERSION DE PARENTESIS
-        System.out.println("********Ejercicio Reversion de parentesis*************");
-         PilaTDA<Character> frase = new ReversionDeParentesis<>();
-        frase.InicializarPila();
+
+        System.out.println("********Ejercicio ReversionString*************");
+
+        ReversionStrings reversor = new ReversionStrings();
 
         String palabra = "ALGORITMOS";
 
-        for (int i = 0; i < palabra.length(); i++) {
-            frase.Apilar(palabra.charAt(i)); //el chartATse usa para devolver un caracter en la posicion especifica en este caso I, entonces apila una x una
-        }
+        System.out.println("Palabra a invertir: " + palabra);
 
-        String invertida = "";
+        String resultado = reversor.revertirstring(palabra);
 
-        while (!frase.PilaVacia()) {
-            invertida += frase.Tope(); //guarda cada letra en inverida
-            frase.Desapilar();
-        }
-
-        System.out.println("Palabra invertida: " + invertida);
-
-
+        System.out.println("Invertida: " + resultado);
     }
-
 }
