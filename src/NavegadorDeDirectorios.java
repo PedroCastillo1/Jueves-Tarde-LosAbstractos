@@ -3,6 +3,10 @@ public class NavegadorDeDirectorios implements PilaTDA<String> {
     private int cantidad = 0;
     private String [] directorios;
 
+    public NavegadorDeDirectorios() {
+        InicializarPila();
+    }
+
     @Override
     public void InicializarPila() {
         directorios = new String[Max];

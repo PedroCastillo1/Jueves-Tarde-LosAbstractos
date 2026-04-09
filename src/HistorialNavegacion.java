@@ -3,6 +3,10 @@ public class HistorialNavegacion implements PilaTDA<String> {
     private int cantidad = 0;
     private String [] urls;
 
+    public HistorialNavegacion() {
+        InicializarPila();
+    }
+
     @Override
     public void InicializarPila() {
         urls = new String[Max];

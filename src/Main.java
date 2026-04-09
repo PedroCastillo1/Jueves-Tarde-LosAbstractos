@@ -90,7 +90,6 @@ public class Main {
 
         System.out.println("********Ejercicio Historial de Navegacion*************");
         HistorialNavegacion historialNavegacion = new HistorialNavegacion();
-        historialNavegacion.InicializarPila();
 
         historialNavegacion.Apilar("www.fi.uba.ar"); // Cargo las paginas de busqueda
         historialNavegacion.Apilar("www.campus.utn.edu.ar");
@@ -107,7 +106,6 @@ public class Main {
         System.out.println("********Ejercicio Navegacion de Directorios*************");
 
         NavegadorDeDirectorios navegadorDeDirectorios = new NavegadorDeDirectorios();
-        navegadorDeDirectorios.InicializarPila();
 
         navegadorDeDirectorios.Apilar("C:"); // Añado directorios
         navegadorDeDirectorios.Apilar("Usuarios");
