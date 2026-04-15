@@ -23,5 +23,33 @@ public class MainBloque3 {
         System.out.println("Alumno agregado");
 
         System.out.println(padronElectoral.mostrarPadronElectoral());
+
+        // act 2 (fiesta de fin de año)
+
+        
+        Persona p = new Persona(45984446);
+        Integer dni = p.getDni();
+        ConjuntoMora c = new ConjuntoMora();
+        System.out.println("Ingresa dni " + p.getDni());
+
+        c.InicializarConjunto();
+        c.Agregar(dni);
+
+        Persona p2= new Persona(77777777);
+        Integer dni2 = p2.getDni();
+        c.Agregar(dni2);
+        System.out.println("Ingresa dni " + p2.getDni());
+
+        Persona p3 = new Persona(55555555);
+        Integer dni3 = p3.getDni();
+        System.out.println("Ingresa dni " + p3.getDni());
+        c.Agregar(dni3);
+
+        // que pasa si quiero meter de nuevo a p
+        System.out.println("Ingresa de nuevo el dni " + p.getDni());
+
+        c.Agregar(dni);
+
+
     }
 }
