@@ -1,22 +1,22 @@
 package Bloque3.Implementacion;
 import Bloque3.Interface.ConjuntoTDA;
-import Bloque2.Implementacion.Persona;
+import Bloque2.Implementacion.Invitado;
 public class ConjuntoMora implements ConjuntoTDA<Integer> {
 
-    private int[] personas;
+    private int[] invitados;
     private int cantidad;
     private static final int MAX = 100;
 
     @Override
     public void InicializarConjunto(){
-        personas = new int[MAX];
+        invitados = new int[MAX];
         cantidad = 0;
     }
 
     @Override
     public void Agregar(Integer x){
         if (!Pertenece(x) && cantidad < MAX){
-            personas[cantidad] = x;
+            invitados[cantidad] = x;
             cantidad++;
         } else {
             System.out.println("no podemos ingresar ese dni. ya existe");
@@ -26,8 +26,8 @@ public class ConjuntoMora implements ConjuntoTDA<Integer> {
     @Override
     public void Sacar(Integer x) {
         for (int i = 0; i < cantidad; i++) {
-            if (personas[i] == x) {
-                personas[i] = personas[cantidad - 1]; // swap con el último
+            if (invitados[i] == x) {
+                invitados[i] = invitados[cantidad - 1]; // swap con el último
                 cantidad--;
                 return;
             }
@@ -37,7 +37,7 @@ public class ConjuntoMora implements ConjuntoTDA<Integer> {
     @Override
     public boolean Pertenece(Integer x) {
         for (int i = 0; i < cantidad; i++) {
-            if (personas[i] == x) {
+            if (invitados[i] == x) {
                 return true;
             }
         }
@@ -58,7 +58,7 @@ public class ConjuntoMora implements ConjuntoTDA<Integer> {
     @Override
     public Integer Elegir() {
         if (!ConjuntoVacio()) {
-            return personas[cantidad - 1]; // devuelve uno cualquiera (el último)
+            return invitados[cantidad - 1]; // devuelve uno cualquiera (el último)
         }
         return null;
     }
