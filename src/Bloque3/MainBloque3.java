@@ -30,7 +30,7 @@ public class MainBloque3 {
 
         
         Invitado i = new Invitado(45984446);
-        Integer dni = p.getDni();
+        Integer dni = i.getDni();
         ConjuntoMora c = new ConjuntoMora();
         System.out.println("Ingresa dni " + i.getDni());
 
@@ -38,12 +38,12 @@ public class MainBloque3 {
         c.Agregar(dni);
 
         Invitado i2= new Invitado(77777777);
-        Integer dni2 = p2.getDni();
+        Integer dni2 = i2.getDni();
         c.Agregar(dni2);
         System.out.println("Ingresa dni " + i2.getDni());
 
         Invitado i3 = new Invitado(55555555);
-        Integer dni3 = p3.getDni();
+        Integer dni3 = i3.getDni();
         System.out.println("Ingresa dni " + i3.getDni());
         c.Agregar(dni3);
 
