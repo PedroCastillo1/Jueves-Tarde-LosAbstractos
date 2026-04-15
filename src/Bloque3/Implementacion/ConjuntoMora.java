@@ -1,6 +1,6 @@
 package Bloque3.Implementacion;
 import Bloque3.Interface.ConjuntoTDA;
-import Bloque2.Implementacion.Invitado;
+import Bloque3.Implementacion.Invitado;
 public class ConjuntoMora implements ConjuntoTDA<Integer> {
 
     private int[] invitados;
