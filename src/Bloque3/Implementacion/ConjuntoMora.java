@@ -49,7 +49,6 @@ public class ConjuntoMora implements ConjuntoTDA<Integer> {
         return cantidad == 0;
     }
 
-    @Override
     public int Tamaño() {
         return cantidad;
     }
