@@ -1,4 +1,5 @@
 import Bloque3.Interface.ConjuntoTDA;
+import Bloque2.Implementacion.Persona;
 public class ConjuntoMora implements ConjuntoTDA<Integer> {
 
     private int[] personas;
