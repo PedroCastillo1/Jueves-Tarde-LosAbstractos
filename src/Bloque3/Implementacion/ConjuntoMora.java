@@ -1,3 +1,4 @@
+import Bloque3.Interface.ConjuntoTDA;
 public class ConjuntoMora implements ConjuntoTDA<Integer> {
 
     private int[] personas;
