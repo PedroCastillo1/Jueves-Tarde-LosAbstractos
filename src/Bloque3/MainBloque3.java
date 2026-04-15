@@ -32,7 +32,7 @@ public class MainBloque3 {
         Invitado i = new Invitado(45984446);
         Integer dni = p.getDni();
         ConjuntoMora c = new ConjuntoMora();
-        System.out.println("Ingresa dni " + p.getDni());
+        System.out.println("Ingresa dni " + i.getDni());
 
         c.InicializarConjunto();
         c.Agregar(dni);
@@ -40,15 +40,15 @@ public class MainBloque3 {
         Invitado i2= new Invitado(77777777);
         Integer dni2 = p2.getDni();
         c.Agregar(dni2);
-        System.out.println("Ingresa dni " + p2.getDni());
+        System.out.println("Ingresa dni " + i2.getDni());
 
         Invitado i3 = new Invitado(55555555);
         Integer dni3 = p3.getDni();
-        System.out.println("Ingresa dni " + p3.getDni());
+        System.out.println("Ingresa dni " + i3.getDni());
         c.Agregar(dni3);
 
         // que pasa si quiero meter de nuevo a p
-        System.out.println("Ingresa de nuevo el dni " + p.getDni());
+        System.out.println("Ingresa de nuevo el dni " + i.getDni());
 
         c.Agregar(dni);
 
