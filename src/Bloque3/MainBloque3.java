@@ -1,4 +1,6 @@
 package Bloque3;
+import Bloque3.Implementacion.DistribuidorDeTicketsIt;
+import Bloque3.Implementacion.FilaDelCajero;
 import Bloque3.Implementacion.GuardiaDeHospital;
 import Bloque3.Interface.ColaPrioridadTDA;
 import Bloque3.Interface.Cola;
@@ -52,6 +54,39 @@ public class MainBloque3 {
         if (bufet.ColaVacia()){
             System.out.println("no hay mas gente en la fila");
         }
+        /* Ejercicio de fila del cajero */
+        System.out.println("*************Fila Del Cajero**************");
+        FilaDelCajero fc = new FilaDelCajero();
 
+        fc.AcolarPrioridad("Embarazada",9);
+        fc.AcolarPrioridad("Viejo",7);
+        fc.AcolarPrioridad("Joven",1);
+
+        System.out.println(fc.Primero());
+        System.out.println("Su prioridad es: " + fc.Prioridad());
+        fc.AcolarPrioridad("Muy Viejo",10);
+        //Acolamos alguien con prioridad distinta para ver si se pone primero
+        System.out.println(fc.Primero());
+        System.out.println("Su prioridad es: " + fc.Prioridad());
+        System.out.println(fc.FilaActual());
+
+        /* Ejercicio de Distribuidora De Tickets IT */
+
+        System.out.println("*************Distribuidora de Tickets IT**************");
+        DistribuidorDeTicketsIt dist = new DistribuidorDeTicketsIt();
+
+        dist.AcolarPrioridad("Se me apaga la compu sola", 350);
+        dist.AcolarPrioridad("No puedo iniciar sesion", 120);
+        dist.AcolarPrioridad("El junior dropeo la Base de Datos", 1000);
+        dist.AcolarPrioridad("Se cayo el servidor", 20000);
+        // el ultimo no se acola ya que la prioridad esta fuera de rango
+        System.out.println(dist.Primero());
+        System.out.println(dist.PrioridadDeTicket());
+        dist.Desacolar();
+        System.out.println(dist.Primero());
+        System.out.println(dist.PrioridadDeTicket());
+        dist.Desacolar();
+        System.out.println(dist.Primero());
+        System.out.println(dist.PrioridadDeTicket());
     }
 }
