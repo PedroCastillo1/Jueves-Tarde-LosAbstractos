@@ -1,9 +1,9 @@
 package Bloque3.Implementacion;
 
-public class Persona {
+public class Invitado {
     private int dni;
 
-    public Persona(int dni) {
+    public Invitado(int dni) {
         this.dni = dni;
     }
 
