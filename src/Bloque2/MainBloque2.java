@@ -1,14 +1,12 @@
-package Bloque3;
-import Bloque3.Implementacion.DistribuidorDeTicketsIt;
-import Bloque3.Implementacion.FilaDelCajero;
-import Bloque3.Implementacion.GuardiaDeHospital;
-import Bloque3.Interface.ColaPrioridadTDA;
-import Bloque3.Interface.Cola;
-import Bloque3.Interface.ColaPrioridad;
-import Bloque3.Implementacion.BuffetFacu;
+package Bloque2;
+import Bloque2.Implementacion.DistribuidorDeTicketsIt;
+import Bloque2.Implementacion.FilaDelCajero;
+import Bloque2.Implementacion.GuardiaDeHospital;
+import Bloque2.Interface.ColaPrioridadTDA;
+import Bloque2.Implementacion.BuffetFacu;
 
 
-public class MainBloque3 {
+public class MainBloque2 {
     public static void main(String[] args) {
         ColaPrioridadTDA<Integer> cola = new GuardiaDeHospital(); //si no agrego integer no me va a dejar poder implementar infopaciente.nombrePaciente(cola.Primero())
         GuardiaDeHospital infopaciente = new GuardiaDeHospital();

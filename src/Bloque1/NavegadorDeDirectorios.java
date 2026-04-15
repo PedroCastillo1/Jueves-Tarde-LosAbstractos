@@ -1,4 +1,4 @@
-package Bloque2;
+package Bloque1;
 
 public class NavegadorDeDirectorios implements PilaTDA<String> {
     private static final int Max = 100;

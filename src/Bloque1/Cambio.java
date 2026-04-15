@@ -1,4 +1,4 @@
-package Bloque2;
+package Bloque1;
 
 public class Cambio {
     private  String estado;

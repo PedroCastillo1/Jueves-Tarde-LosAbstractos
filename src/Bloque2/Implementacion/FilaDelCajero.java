@@ -1,6 +1,6 @@
-package Bloque3.Implementacion;
+package Bloque2.Implementacion;
 
-import Bloque3.Interface.ColaPrioridadTDA;
+import Bloque2.Interface.ColaPrioridadTDA;
 
 public class FilaDelCajero implements ColaPrioridadTDA<String> {
     private static final int Max = 100;

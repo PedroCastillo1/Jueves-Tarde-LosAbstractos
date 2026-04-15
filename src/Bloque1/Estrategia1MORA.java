@@ -1,4 +1,4 @@
-package Bloque2;
+package Bloque1;
 
 public class Estrategia1MORA implements PilaTDA<String> {
     private String[] pila;

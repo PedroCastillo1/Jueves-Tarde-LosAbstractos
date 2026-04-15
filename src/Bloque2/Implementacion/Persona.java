@@ -1,4 +1,4 @@
-package Bloque3.Implementacion;
+package Bloque2.Implementacion;
 
 public class Persona {
 

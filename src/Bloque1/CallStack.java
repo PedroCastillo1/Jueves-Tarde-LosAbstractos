@@ -1,4 +1,4 @@
-package Bloque2;/*Pila de Llamadas (Call Stack): Cuando una función llama a otra.
+package Bloque1;/*Pila de Llamadas (Call Stack): Cuando una función llama a otra.
 o Consigna: Si Bloque2.Main() llama a CalcularPromedio() y esta llama a
 Sumar(), ¿quién está en el Tope() en el momento de la ejecución de
 la suma?

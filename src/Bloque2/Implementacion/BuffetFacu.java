@@ -1,5 +1,5 @@
-package Bloque3.Implementacion;
-import Bloque3.Interface.Cola;
+package Bloque2.Implementacion;
+import Bloque2.Interface.Cola;
 
 public class BuffetFacu implements Cola{
 

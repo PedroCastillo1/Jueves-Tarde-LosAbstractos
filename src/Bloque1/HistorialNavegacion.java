@@ -1,4 +1,4 @@
-package Bloque2;
+package Bloque1;
 
 public class HistorialNavegacion implements PilaTDA<String> {
     private static final int Max = 100;
