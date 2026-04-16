@@ -2,6 +2,8 @@ package Bloque3;
 
 import Bloque3.Implementacion.ElegirVsSacar;
 import Bloque3.Implementacion.PadronElectoral;
+import Bloque3.Implementacion.ConjuntoMora;
+import Bloque3.Implementacion.Invitado;
 
 public class MainBloque3 {
     public static void main(String[] args) {
@@ -28,26 +30,26 @@ public class MainBloque3 {
         // act 2 (fiesta de fin de año)
 
         
-        Persona p = new Persona(45984446);
-        Integer dni = p.getDni();
+        Invitado i = new Invitado(45984446);
+        Integer dni = i.getDni();
         ConjuntoMora c = new ConjuntoMora();
-        System.out.println("Ingresa dni " + p.getDni());
+        System.out.println("Ingresa dni " + i.getDni());
 
         c.InicializarConjunto();
         c.Agregar(dni);
 
-        Persona p2= new Persona(77777777);
-        Integer dni2 = p2.getDni();
+        Invitado i2= new Invitado(77777777);
+        Integer dni2 = i2.getDni();
         c.Agregar(dni2);
-        System.out.println("Ingresa dni " + p2.getDni());
+        System.out.println("Ingresa dni " + i2.getDni());
 
-        Persona p3 = new Persona(55555555);
-        Integer dni3 = p3.getDni();
-        System.out.println("Ingresa dni " + p3.getDni());
+        Invitado i3 = new Invitado(55555555);
+        Integer dni3 = i3.getDni();
+        System.out.println("Ingresa dni " + i3.getDni());
         c.Agregar(dni3);
 
         // que pasa si quiero meter de nuevo a p
-        System.out.println("Ingresa de nuevo el dni " + p.getDni());
+        System.out.println("Ingresa de nuevo el dni " + i.getDni());
 
         c.Agregar(dni);
 

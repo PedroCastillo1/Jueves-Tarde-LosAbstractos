@@ -1,35 +1,37 @@
-public class DiccionarioMora implements DiccionarioTDA<Integer, String> {
+package Bloque4.Implementacion;
 
-    private int[] claves;
-    private String[] valores;
+import Bloque4.DiccionarioTDA;
+
+public class DiccionarioMora implements DiccionarioTDA<String, Integer> {
+
+    private String[] claves;
+    private int[] valores;
     private int cantidad;
     private static final int MAX = 100;
 
     @Override
     public void InicializarDiccionario() {
-        claves = new int[MAX];
-        valores = new String[MAX];
+        claves = new String[MAX];
+        valores = new int[MAX];
         cantidad = 0;
     }
 
     @Override
-    public void Agregar(Integer clave, String valor) {
+    public void Agregar(String clave, Integer valor) {
         int pos = BuscarPos(clave);
 
         if (pos == -1) {
-            if (cantidad < MAX) {
-                claves[cantidad] = clave;
-                valores[cantidad] = valor;
-                cantidad++;
-            }
+            claves[cantidad] = clave;
+            valores[cantidad] = valor;
+            cantidad++;
         } else {
-            // si la clave ya existe, actualiza el valor
+            // 🔥 actualiza si ya existe
             valores[pos] = valor;
         }
     }
 
     @Override
-    public void Eliminar(Integer clave) {
+    public void Eliminar(String clave) {
         int pos = BuscarPos(clave);
 
         if (pos != -1) {
@@ -40,12 +42,12 @@ public class DiccionarioMora implements DiccionarioTDA<Integer, String> {
     }
 
     @Override
-    public boolean Pertenece(Integer clave) {
+    public boolean Pertenece(String clave) {
         return BuscarPos(clave) != -1;
     }
 
     @Override
-    public String Obtener(Integer clave) {
+    public Integer Obtener(String clave) {
         int pos = BuscarPos(clave);
         if (pos != -1) {
             return valores[pos];
@@ -58,10 +60,9 @@ public class DiccionarioMora implements DiccionarioTDA<Integer, String> {
         return cantidad == 0;
     }
 
-    // 🔥 método auxiliar clave
-    private int BuscarPos(Integer clave) {
+    private int BuscarPos(String clave) {
         for (int i = 0; i < cantidad; i++) {
-            if (claves[i] == clave) {
+            if (claves[i].equals(clave)) {
                 return i;
             }
         }
