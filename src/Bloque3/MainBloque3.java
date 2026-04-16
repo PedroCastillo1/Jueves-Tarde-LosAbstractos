@@ -1,5 +1,6 @@
 package Bloque3;
 
+import Bloque3.Implementacion.ElegirVsSacar;
 import Bloque3.Implementacion.PadronElectoral;
 
 public class MainBloque3 {
@@ -50,6 +51,28 @@ public class MainBloque3 {
 
         c.Agregar(dni);
 
+// elegir VS sacar
+        System.out.println("\n--- MI PARTE: PRUEBA ELEGIR VS SACAR ---");
 
+        ElegirVsSacar miPrueba = new ElegirVsSacar();
+
+        miPrueba.Agregar("#Java");
+        miPrueba.Agregar("#Programacion");
+        miPrueba.Agregar("#Po");
+
+        String e1 = miPrueba.Elegir();
+        String e2 = miPrueba.Elegir();
+
+        System.out.println("Llamada 1 a Elegir(): " + e1);
+        System.out.println("Llamada 2 a Elegir(): " + e2);
+
+        if (e1.equals(e2)) {
+            System.out.println("> Resultado: Se mantiene el mismo elemento (comportamiento arbitrario).");
+        }
+
+        System.out.println("\nEjecutando Sacar(\"" + e1 + "\")...");
+        miPrueba.Sacar(e1);
+
+        System.out.println("Llamada a Elegir() después de sacar: " + miPrueba.Elegir());
     }
 }
